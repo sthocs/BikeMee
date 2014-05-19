@@ -57,7 +57,7 @@ Page {
         target: cacheManager
         onContractsUpdated: {
             var cities = JSON.parse(contracts);
-            cities.sort(function(a, b) { return a.country_code.charCodeAt(0) - b.country_code.charCodeAt(0) });
+            cities.sort(function(a, b) { return a.countryCode.charCodeAt(0) - b.countryCode.charCodeAt(0) });
             for (var i = 0; i < cities.length; ++i) {
                 cityModel.append(cities[i]);
             }
@@ -114,7 +114,7 @@ Page {
 
         model: cityModel
 
-        section.property: "country_code"
+        section.property: "countryCode"
         section.criteria: ViewSection.FullString
         section.delegate: sectionHeading
 
@@ -148,7 +148,7 @@ Page {
 
                     Label {
                         id: subText
-                        text: model.commercial_name
+                        text: model.commercialName
                         font.weight: Font.Light
                         font.pixelSize: 22
                         color: "#cc6633"

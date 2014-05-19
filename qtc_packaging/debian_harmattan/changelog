@@ -1,3 +1,9 @@
+bikemee (0.2.0) unstable; urgency=low
+
+  * Update due to changes in JCDecaux API.
+
+ -- sthocs <sthocs@hotmail.com>  Sun, 16 Mar 2014 02:42:13 +0100
+
 bikemee (0.1.0) unstable; urgency=low
 
   * Initial Release.
